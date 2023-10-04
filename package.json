@@ -1,0 +1,20 @@
+{
+  "name": "iAutomated testing with JavaScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naurisstudy/introinJS.git"
+  },
+  "keywords": [],
+  "author": "Nauris Kostjuks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naurisstudy/introinJS/issues"
+  },
+  "homepage": "https://github.com/naurisstudy/introinJS#readme"
+}
