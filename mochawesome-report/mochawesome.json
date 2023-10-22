@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-10-22T14:32:14.758Z",
-    "end": "2023-10-22T14:32:14.765Z",
-    "duration": 7,
+    "start": "2023-10-22T15:40:45.942Z",
+    "end": "2023-10-22T15:40:45.950Z",
+    "duration": 8,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b4359892-1584-493a-bff4-922f1e046e34",
+      "uuid": "71819471-536f-4e3f-86c2-34b95a7a4c2f",
       "title": "",
       "fullFile": "C:\\Users\\Nauris\\OneDrive\\Desktop\\epam homework\\fixed\\introinJS\\test\\numbers-validator\\inNumberEven.spec.js",
       "file": "\\test\\numbers-validator\\inNumberEven.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "595e36d1-864d-441a-b025-891b3ec48fe2",
+          "uuid": "33495f58-219b-486d-9821-0ae209823f78",
           "title": "isNumberEven positive test",
           "fullFile": "C:\\Users\\Nauris\\OneDrive\\Desktop\\epam homework\\fixed\\introinJS\\test\\numbers-validator\\inNumberEven.spec.js",
           "file": "\\test\\numbers-validator\\inNumberEven.spec.js",
@@ -45,8 +45,8 @@
               "context": null,
               "code": "validator = new NumbersValidator();",
               "err": {},
-              "uuid": "52f0c550-76b5-49d3-9fdf-90c58ecd1a90",
-              "parentUUID": "595e36d1-864d-441a-b025-891b3ec48fe2",
+              "uuid": "450664a1-208b-439c-b79d-2301f0abbb68",
+              "parentUUID": "33495f58-219b-486d-9821-0ae209823f78",
               "isHook": true,
               "skipped": false
             }
@@ -57,7 +57,7 @@
               "title": "should return true when provided with an even number",
               "fullTitle": "isNumberEven positive test should return true when provided with an even number",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -66,20 +66,20 @@
               "context": null,
               "code": "const validationResults = validator.isNumberEven(4);\nexpect(validationResults).to.be.equal(true);",
               "err": {},
-              "uuid": "1fdef33a-a984-47af-b157-7f861b935a77",
-              "parentUUID": "595e36d1-864d-441a-b025-891b3ec48fe2",
+              "uuid": "882f72ae-8e0a-4c7b-9875-fafa284e1f99",
+              "parentUUID": "33495f58-219b-486d-9821-0ae209823f78",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1fdef33a-a984-47af-b157-7f861b935a77"
+            "882f72ae-8e0a-4c7b-9875-fafa284e1f99"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
