@@ -1,5 +1,5 @@
-import {NumbersValidator} from '../../app/numbers.js';
-import {expect} from 'chai';
+import { expect } from 'chai';
+import { NumbersValidator } from '../../app/numbers.js';
 
 describe('isNumberEven positive test', () => {
   let validator;
@@ -10,4 +10,5 @@ describe('isNumberEven positive test', () => {
   it('should return true when provided with an even number', () => {
     const validationResults = validator.isNumberEven(4);
     expect(validationResults).to.be.equal(true);
-  })
+  });
+});
