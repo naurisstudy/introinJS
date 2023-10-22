@@ -56,7 +56,7 @@ class numVal {
   }
 }
 
-describe("test 4 - NumbersValidator", () => {
+describe("test 4 - Numbers Validator", () => {
   const validator = new numVal();
 
   it("should return true for an integer", () => {

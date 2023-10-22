@@ -1,3 +1,4 @@
 /node_modules
 /coverage
 .idea/
+.c8rc.json/
