@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 4,
+    "tests": 5,
+    "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2023-10-22T15:40:45.942Z",
-    "end": "2023-10-22T15:40:45.950Z",
-    "duration": 8,
-    "testsRegistered": 1,
+    "start": "2023-10-22T16:29:27.963Z",
+    "end": "2023-10-22T16:29:27.973Z",
+    "duration": 10,
+    "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,23 +18,23 @@
   },
   "results": [
     {
-      "uuid": "71819471-536f-4e3f-86c2-34b95a7a4c2f",
+      "uuid": "17fac3a4-4a61-4c8f-a527-fb563147ad7a",
       "title": "",
-      "fullFile": "C:\\Users\\Nauris\\OneDrive\\Desktop\\epam homework\\fixed\\introinJS\\test\\numbers-validator\\inNumberEven.spec.js",
-      "file": "\\test\\numbers-validator\\inNumberEven.spec.js",
+      "fullFile": "",
+      "file": "",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "33495f58-219b-486d-9821-0ae209823f78",
-          "title": "isNumberEven positive test",
+          "uuid": "c4a630c7-1cc9-47cc-9a56-11ba86ef865a",
+          "title": "test 1  - is Number Even positive test",
           "fullFile": "C:\\Users\\Nauris\\OneDrive\\Desktop\\epam homework\\fixed\\introinJS\\test\\numbers-validator\\inNumberEven.spec.js",
           "file": "\\test\\numbers-validator\\inNumberEven.spec.js",
           "beforeHooks": [
             {
-              "title": "\"before each\" hook in \"isNumberEven positive test\"",
-              "fullTitle": "isNumberEven positive test \"before each\" hook in \"isNumberEven positive test\"",
+              "title": "\"before each\" hook in \"test 1  - is Number Even positive test\"",
+              "fullTitle": "test 1  - is Number Even positive test \"before each\" hook in \"test 1  - is Number Even positive test\"",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -45,17 +45,36 @@
               "context": null,
               "code": "validator = new NumbersValidator();",
               "err": {},
-              "uuid": "450664a1-208b-439c-b79d-2301f0abbb68",
-              "parentUUID": "33495f58-219b-486d-9821-0ae209823f78",
+              "uuid": "1bbaca31-b3dd-4220-8d4e-76402f0e5ca3",
+              "parentUUID": "c4a630c7-1cc9-47cc-9a56-11ba86ef865a",
               "isHook": true,
               "skipped": false
             }
           ],
-          "afterHooks": [],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"test 1  - is Number Even positive test\"",
+              "fullTitle": "test 1  - is Number Even positive test \"after each\" hook in \"test 1  - is Number Even positive test\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = null;",
+              "err": {},
+              "uuid": "5ed754aa-7dbb-4c70-9ce2-27e66a3baa1c",
+              "parentUUID": "c4a630c7-1cc9-47cc-9a56-11ba86ef865a",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
           "tests": [
             {
               "title": "should return true when provided with an even number",
-              "fullTitle": "isNumberEven positive test should return true when provided with an even number",
+              "fullTitle": "test 1  - is Number Even positive test should return true when provided with an even number",
               "timedOut": false,
               "duration": 1,
               "state": "passed",
@@ -66,20 +85,156 @@
               "context": null,
               "code": "const validationResults = validator.isNumberEven(4);\nexpect(validationResults).to.be.equal(true);",
               "err": {},
-              "uuid": "882f72ae-8e0a-4c7b-9875-fafa284e1f99",
-              "parentUUID": "33495f58-219b-486d-9821-0ae209823f78",
+              "uuid": "c2b0b5e9-76c7-478e-903b-400c99973d21",
+              "parentUUID": "c4a630c7-1cc9-47cc-9a56-11ba86ef865a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "882f72ae-8e0a-4c7b-9875-fafa284e1f99"
+            "c2b0b5e9-76c7-478e-903b-400c99973d21"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1fe0de49-3ee4-474e-84fe-5b95e8d6c88f",
+          "title": "test 2 - get Even Numbers From Array",
+          "fullFile": "C:\\Users\\Nauris\\OneDrive\\Desktop\\epam homework\\fixed\\introinJS\\test\\numbers-validator\\inNumberEven.spec.js",
+          "file": "\\test\\numbers-validator\\inNumberEven.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return even numbers from the array",
+              "fullTitle": "test 2 - get Even Numbers From Array should return even numbers from the array",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = getEvenNumbersFromArray([1, 2, 3, 4, 5, 6]);\nassert.deepStrictEqual(result, [2, 4, 6]);",
+              "err": {},
+              "uuid": "83cf2834-3a73-40ec-b6e8-3493dd6d3970",
+              "parentUUID": "1fe0de49-3ee4-474e-84fe-5b95e8d6c88f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83cf2834-3a73-40ec-b6e8-3493dd6d3970"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a6bfc0e7-b2e8-43c1-b100-5be2639b5b97",
+          "title": "test 3 - isAllNumbers",
+          "fullFile": "C:\\Users\\Nauris\\OneDrive\\Desktop\\epam homework\\fixed\\introinJS\\test\\numbers-validator\\inNumberEven.spec.js",
+          "file": "\\test\\numbers-validator\\inNumberEven.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return true for an array of numbers",
+              "fullTitle": "test 3 - isAllNumbers should return true for an array of numbers",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = isAllNumbers([1, 2, 3, 4, 5, 6]);\nassert.isTrue(result);",
+              "err": {},
+              "uuid": "cbd611e5-2b79-4923-a436-94c2ebb747c6",
+              "parentUUID": "a6bfc0e7-b2e8-43c1-b100-5be2639b5b97",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cbd611e5-2b79-4923-a436-94c2ebb747c6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "daa54271-e1ce-4c86-819b-0e0ccfbccd68",
+          "title": "test 4 - NumbersValidator",
+          "fullFile": "C:\\Users\\Nauris\\OneDrive\\Desktop\\epam homework\\fixed\\introinJS\\test\\numbers-validator\\inNumberEven.spec.js",
+          "file": "\\test\\numbers-validator\\inNumberEven.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return true for an integer",
+              "fullTitle": "test 4 - NumbersValidator should return true for an integer",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = validator.isInteger(42);\nassert.isTrue(result);",
+              "err": {},
+              "uuid": "32b92797-7c88-47b3-8a54-b647a19dd0d9",
+              "parentUUID": "daa54271-e1ce-4c86-819b-0e0ccfbccd68",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return false for a non-integer number",
+              "fullTitle": "test 4 - NumbersValidator should return false for a non-integer number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = validator.isInteger(3.14);\nassert.isFalse(result);",
+              "err": {},
+              "uuid": "f3039b49-7a92-4232-8a75-046968fede24",
+              "parentUUID": "daa54271-e1ce-4c86-819b-0e0ccfbccd68",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "32b92797-7c88-47b3-8a54-b647a19dd0d9",
+            "f3039b49-7a92-4232-8a75-046968fede24"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
